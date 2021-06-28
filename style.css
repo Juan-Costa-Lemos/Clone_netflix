@@ -1,0 +1,122 @@
+:root{
+--vermelho:#e50914;
+--preto: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* formato de caixa */
+    
+}
+
+body{
+background: var(--preto);
+font-family: 'Times New Roman', Times, serif;
+color: #fcfcfc;
+}
+
+header .container{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'arial black', Times;
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;/* distanciamento entre as letras */
+}
+
+header nav a:hover{ /* efeito de quando passar o mouse mudar a cor da letra */
+color: #fff;
+}
+/* ------------------------tela de destaque -------------------- */
+
+.Filme-principal {
+    font-size: 16px;
+    margin-left: 5px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("img/masterchef.jpg");
+    /* o gradiente pede mais de uma cor, desta forma vai criando um camada fina de preto dando um destaque */
+
+    height: 400px;
+    background-size:cover; /* vai pegar a area de cobertura */
+
+    display: flex;
+    flex-direction: column; /* deixar como coluna */
+    justify-content: center; /* de modo centralizado */
+    align-items: flex-start; /* começar pela lateral */
+
+}
+.Filme-principal .descricao{
+    margin-bottom: 40px;/* a distancia da descrição em relação aos botões */
+left: 4%;
+width: 100%;
+font-weight: 400;
+text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+margin: 10px;
+
+}
+.Filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+ 
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+ .botao {
+     background-color: rgba(0,0,0,.50); /* efeito transparente */
+     border: none;    /* sem bordas */
+     border-radius: 3px;
+     color: white;
+
+     padding: 15px 30px; /* laterais | para cima baixo */
+     margin-right: 15px;
+     font-size: 13px;
+
+     cursor: pointer;
+     transition: .3s ease all; /* trasição com tempo de 3 segundos */
+ }
+ .botao:hover{/* quando o mouse passar no botão */
+    background-color: white;
+    color: var(--preto);
+
+
+ }
+ .botao i{
+     margin-right: 8px;
+ }
+.wrapper{
+    margin-left:15px;
+}
+.Filme-principal .wrapper{/*  apenas quem tiver nessa classe */
+    width: 60%;
+}
+.box-filme{
+    height: 245px;
+    width: 365px;
+    display: block;
+    
+    border: none;    /* sem bordas */
+    border-radius: 3px;
+
+    cursor: pointer;
+     transition: .3s ease all;
+}
+.box-filme:hover{
+    background-color: white;
+    color: var(--preto);
+    border: silver 3px solid;
+}
+.carrosel-filmes{
+    margin-top: 5px;
+}
+ 
